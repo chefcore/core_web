@@ -1,0 +1,11 @@
+server {
+    listen   <%= node['nginx']['port'] -%>;
+    server_name  <%= node['core_web']['nginx']['server_name'] %>;
+
+    access_log  <%= node['nginx']['log_dir'] %>/localhost.access.log;
+
+    location / {
+        root   <%= node['core_web']['nginx']['path'] %>;
+        index  index.html index.htm;
+    }
+}
