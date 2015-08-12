@@ -6,29 +6,39 @@ AllCops:
     - 'Berksfile'
     - 'Vagrantfile'
     - 'Gemfile'
+    - 'Rakefile'
 
-# http://www.rubydoc.info/github/bbatsov/rubocop/Rubocop/Cop/Style/LineLength
 Metrics/LineLength:
-  Max: 120
+  Max: 200
 
-# http://www.rubydoc.info/github/bbatsov/rubocop/Rubocop/Cop/Style/MethodLength
 Metrics/MethodLength:
   Max: 60
   CountComments: false
   Enabled: true
 
-# http://www.rubydoc.info/github/bbatsov/rubocop/Rubocop/Cop/Style/Encoding
-Style/Encoding:
+Encoding:
   Enabled: false
 
-# http://www.rubydoc.info/github/bbatsov/rubocop/Rubocop/Cop/Style/SignalException
-Style/SignalException:
+SignalException:
   EnforcedStyle: only_raise
 
-# http://www.rubydoc.info/github/bbatsov/rubocop/Rubocop/Cop/Style/BracesAroundHashParameters
-Style/BracesAroundHashParameters:
-  EnforcedStyle: braces
+BracesAroundHashParameters:
+  EnforcedStyle: false
 
-# http://www.rubydoc.info/github/bbatsov/rubocop/Rubocop/Cop/Style/EmptyLiteral
-Style/EmptyLiteral:
+EmptyLiteral:
+  Enabled: false
+
+CyclomaticComplexity:
+  Enabled: false
+
+AlignParameters:
+  Enabled: false
+
+Encoding:
+  Enabled: false
+
+#HashSyntax:
+#  EnforcedStyle: hash_rockets
+
+Documentation:
   Enabled: false

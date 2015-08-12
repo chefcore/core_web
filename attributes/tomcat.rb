@@ -1,6 +1,3 @@
-# rubocop:disable Metrics/LineLength
-# rubocop:disable Style/LineLength
-
 default['core_web']['tomcat']['path'] = '/var/www/tomcat/chefcore'
 default['core_web']['tomcat']['server_url'] = 'http://chefcore-tomcat'
 default['core_web']['tomcat']['server_name'] = 'tomcat'
